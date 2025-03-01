@@ -1,0 +1,56 @@
+#waveform-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+#waveform {
+    width: 100%;
+    height: 100%;
+}
+
+#cursor-line {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: red;
+    pointer-events: none;
+    display: none;
+}
+
+body {
+    background: #181414;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.controls {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: rgb(227, 174, 0);
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin-top:20px;
+}
+
+input[type="range"] {
+    width: 150px;
+    cursor: pointer;
+}
+
+.misc{
+    margin-top:20px;
+}
+
+.hidden{
+    display:none;
+}
