@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TranscriBee</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <div class="hidden"id="waveform-container">
+        <div id="waveform"></div>
+        <div id="cursor-line"></div>
+    </div>
+
+    <div id="controls" class="controls hidden">
+        <button id="zoomIn">Zoom In</button>
+        <button id="zoomOut">Zoom Out</button>
+        <button id="playPause">Play/Pause</button>
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        <label id="tempoLabel" for="tempo">Tempo</label>
+        <input type="range" id="tempo" min="0.07" max="2" step="0.01" value="1">
+    </div>
+
+    <div class="misc">
+        <input type="file" id='audioFile'>
+        <button id="startMidiBtn">Start MIDI Piano</button>
+    </div>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    
+    <script src="./js/app.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/midi.js"></script>
+</body>
+</html>
